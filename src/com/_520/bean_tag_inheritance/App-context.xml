@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    多个bean的共同部分    -->
+    <bean id="base" abstract="true">
+        <property name="name" value="nana"/>
+        <property name="age" value="18"/>
+    </bean>
+    <bean id="someBean1" class="com._520.bean_tag_inheritance.SomeBean1" parent="base">
+<!--        <property name="name" value="nana"/>-->
+        <!--        <property name="age" value="18"/>-->
+        <property name="weight" value="90"/>
+    </bean>
+    <bean id="someBean2" class="com._520.bean_tag_inheritance.SomeBean2">
+<!--        <property name="name" value="nana"/>-->
+<!--        <property name="age" value="18"/>-->
+        <property name="high" value="160"/>
+    </bean>
+</beans>

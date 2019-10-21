@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd
+">
+
+<!--    DI注解解析器     -->
+    <context:annotation-config/>
+<!--    IoC注解解析器    -->
+    <context:component-scan base-package="com._520.proxy_static"/>
+
+<!--    dao对象   -->
+   <bean id="employeeDAO" class="com._520.proxy_static.dao.impl.EmployeeDAOImpl"/>
+
+<!--  事务管理器  -->
+    <bean id="transactionManger" class="com._520.proxy_static.dao.tx.TransactionManger"/>
+<!--    静态代理    -->
+    <bean id="employeeServiceProxy" class="com._520.proxy_static.dao.proxy.EmployeeServiceProxy">
+        <property name="employeeService">
+            <bean class="com._520.proxy_static.dao.service.impl.EmployeeServiceImpl">
+                <property name="dao" ref="employeeDAO"/>
+            </bean>
+        </property>
+        <property name="txManger" ref="transactionManger"/>
+    </bean>
+</beans>

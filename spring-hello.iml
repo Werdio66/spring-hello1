@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="App Context" removed="false">
+          <file>file://$MODULE_DIR$/src/com/_520/springDI/setter/App-context.xml</file>
+          <file>file://$MODULE_DIR$/src/com/_520/property_placehonder/App-context.xml</file>
+          <file>file://$MODULE_DIR$/src/com/_520/bean_tag_inheritance/App-context.xml</file>
+          <file>file://$MODULE_DIR$/src/com/_520/register/DAO/test/App-context.xml</file>
+          <file>file://$MODULE_DIR$/src/com/_520/annotation/DI/App-context.xml</file>
+          <file>file://$MODULE_DIR$/src/com/_520/annotation/Ioc/App-context.xml</file>
+          <file>file://$MODULE_DIR$/src/com/_520/annotation/lifecycle/App-context.xml</file>
+          <file>file://$MODULE_DIR$/src/com/_520/proxy_static/dao/test/App-context.xml</file>
+          <file>file://$MODULE_DIR$/src/com/_520/proxy_jdk/dao/test/App-context.xml</file>
+          <file>file://$MODULE_DIR$/src/com/_520/proxy_cglib/dao/test/App-context.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.junit.jupiter:junit-jupiter-api:5.5.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apiguardian:apiguardian-api:1.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.opentest4j:opentest4j:1.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.junit.platform:junit-platform-commons:1.5.2" level="project" />
+    <orderEntry type="library" name="Maven: junit:junit:4.12" level="project" />
+    <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.1.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:5.1.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.1.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.1.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.1.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.1.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-test:5.1.10.RELEASE" level="project" />
+  </component>
+</module>

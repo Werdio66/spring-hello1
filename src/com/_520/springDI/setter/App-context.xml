@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--   常量注入-->
+   <bean id="person1" class="com._520.springDI.setter.Person1">
+      <property name="name" value="nnn"/>
+      <property name="age" value="33"/>
+   </bean>
+<!--   对象注入-->
+   <bean id="person2" class="com._520.springDI.setter.Person2">
+      <property name="p1" ref="person1"/>
+   </bean>
+<!--   集合注入-->
+   <bean id="person3" class="com._520.springDI.setter.Person3">
+      <property name="set">
+         <set>
+            <value>set1</value>
+            <value>set2</value>
+         </set>
+      </property>
+      <property name="list">
+         <list>
+            <value>niuniu</value>
+            <value>niuniu</value>
+         </list>
+      </property>
+      <property name="arr">
+         <array>
+            <value>111</value>
+         </array>
+<!--         <list>-->
+<!--            <value>4444</value>-->
+<!--         </list>-->
+      </property>
+      <property name="map">
+         <map>
+            <entry key="ser" value="999"/>
+         </map>
+      </property>
+      <property name="properties">
+<!--         <props>-->
+<!--            <prop key="p1">v1</prop>-->
+<!--         </props>-->
+         <value>
+            p1=v1
+         </value>
+      </property>
+   </bean>
+</beans>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--   使用构造器创建对象-->
+   <bean id="cat1" class="com._520.spring.createBean.constructor.Cat1" scope="prototype"/>
+<!--   使用静态工厂类创建对象-->
+   <bean id="cat2" class="com._520.spring.createBean.staticMethod.Cat2Factory" factory-method="getInstence"/>
+<!--   使用实例工厂创建对象-->
+   <bean id="cat3facotry" class="com._520.spring.createBean.instanceMethod.Cat3Factory"/>
+   <bean factory-bean="cat3facotry" factory-method="getInstence"/>
+<!--   实现beanfactory创建对象-->
+   <bean id="cat4" class="com._520.spring.createBean.factoryBean.Cat4Factory"/>
+<!--   生命周期-->
+   <bean id="dog1" class="com._520.spring.createBean.lifecycle.Dog1" init-method="init" destroy-method="distory"/>
+</beans>
